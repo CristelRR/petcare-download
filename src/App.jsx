@@ -13,12 +13,12 @@ export default function App() {
 
         {/* LOGO */}
         <div className="relative flex justify-center mb-6">
-          <div className="absolute w-32 h-32 bg-blue-200/40 blur-xl rounded-xl animate-[pulse_3s_ease-in-out_infinite]"></div>
-          
+          <div className="absolute w-32 h-32 bg-blue-200/40 blur-xl rounded-full animate-[pulse_3s_ease-in-out_infinite]"></div>
+
           <img
             src={logo}
             alt="PetCare Logo"
-            className="w-24 md:w-32 z-10 rounded-xl shadow-xl animate-[pulse_4s_ease-in-out_infinite]"
+            className="w-24 md:w-32 z-10 rounded-full shadow-xl animate-[pulse_4s_ease-in-out_infinite]"
           />
         </div>
 
@@ -40,25 +40,39 @@ export default function App() {
         </h2>
 
         <div className="text-gray-700 text-left space-y-3 mb-8 px-4">
-          <p>🐾  <b>1.</b> Abre la app e inicia sesión o crea una cuenta.</p>
-          <p>🐾  <b>2.</b> Registra a tus mascotas con sus datos y su foto.</p>
-          <p>🐾  <b>3.</b> Consulta su perfil, historial y actualiza su información.</p>
-          <p>🐾  <b>4.</b> Comparte fotos e historias en la comunidad PetCare.</p>
-          <p>🐾  <b>5.</b> Gestiona todo desde un solo lugar.</p>
+          <p>🐾 <b>1.</b> Abre la app e inicia sesión o crea una cuenta.</p>
+          <p>🐾 <b>2.</b> Registra a tus mascotas con sus datos y su foto.</p>
+          <p>🐾 <b>3.</b> Consulta su perfil, historial y actualiza su información.</p>
+          <p>🐾 <b>4.</b> Comparte fotos e historias en la comunidad PetCare.</p>
+          <p>🐾 <b>5.</b> Gestiona todo desde un solo lugar.</p>
         </div>
 
         {/* BOTÓN DE DESCARGA */}
         <a
-          href="https://drive.google.com/file/d/1eWwsP4sBQ_vGYpeMB4uj9u3unv5yvwFB/view?usp=sharing"
-          download
+          href="https://github.com/CristelRR/petcare-download/releases/download/v1.0.0/application-7136a598-716b-4224-8cfc-8e6dbbe64091.apk"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-10 py-4 rounded-2xl text-lg font-semibold shadow-lg transition transform hover:scale-105 hover:-translate-y-1"
         >
           📥 Descargar APK (Android)
         </a>
 
+        {/* QR CODE */}
+        <div className="mt-6 flex flex-col items-center">
+          <p className="text-gray-700 mb-2">O escanéalo aquí 📱</p>
+
+          <img
+            src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/CristelRR/petcare-download/releases/download/v1.0.0/application-7136a598-716b-4224-8cfc-8e6dbbe64091.apk`}
+            alt="QR Download APK"
+            className="w-40 h-40 rounded-xl shadow-md"
+          />
+        </div>
+
         {/* FOOTER */}
         <p className="mt-8 text-sm text-gray-600">
-          © 2025 PetCare — Proyecto Universitario UTNG     </p>
+          © 2025 PetCare — Proyecto Universitario UTNG 
+        </p>
+
       </div>
     </div>
   );
