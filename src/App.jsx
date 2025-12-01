@@ -49,7 +49,7 @@ export default function App() {
 
         {/* BOTÓN DE DESCARGA */}
         <a
-          href="AQUI_PONES_TU_APK"
+          href="https://drive.google.com/file/d/1eWwsP4sBQ_vGYpeMB4uj9u3unv5yvwFB/view?usp=sharing"
           download
           className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-10 py-4 rounded-2xl text-lg font-semibold shadow-lg transition transform hover:scale-105 hover:-translate-y-1"
         >
