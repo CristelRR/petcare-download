@@ -58,8 +58,7 @@ export default function App() {
 
         {/* FOOTER */}
         <p className="mt-8 text-sm text-gray-600">
-          © 2025 PetCare — Proyecto Universitario UTL 💛🖤
-        </p>
+          © 2025 PetCare — Proyecto Universitario UTNG     </p>
       </div>
     </div>
   );
